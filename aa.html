@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu déroulant Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img id="logo1" src="assets/img/esigelec.png" alt="Logo Esigelec"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">À propos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Service 1</a>
+                    <a class="dropdown-item" href="#">Service 2</a>
+                    <a class="dropdown-item" href="#">Service 3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.php">Connexion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inscription.php">Inscription</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <section>
+        <div class="container">
+            <h1 id="sujet" style="height: 41px; width: 930px; margin: 2px; padding: 0px;">Sujet en tendance</h1>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            <button class="btn" id="image1" onclick="window.location.href = '#'" ><img src="assets/img/intelligence artificiel.jpeg" style="padding: 5px;">
+                <span class="product-info">
+                <span class="card-subtitle">
+                    <span>Intelligence Artificielle</span>
+                </span>
+            </span>
+            </button>
+                </div>
+            <div class="col-md-4">
+            <button class="btn" id="image2" onclick="window.location.href = '#'"><img src="assets/img/mal nutrition.jpg" style="padding: 5px;">
+                <span class="product-info">
+                <span class="card-subtitle">
+                    <span>Malnutrition</span>
+                </span>
+            </span>
+            </button>
+                </div>
+            <div class="col-md-4">
+            </button>
+            <button class="btn" id="image3" onclick="window.location.href = '#'"><img src="assets/img/mangez.jpg" style="padding: 5px;">
+                <span class="product-info">
+                <span class="card-subtitle">
+                    <span>Manger Bio</span>
+                </span>
+            </span>
+            </button>
+            </div>
+            <div class="col-md-4">
+            <button class="btn" id="image4" onclick="window.location.href = '#'"><img src="assets/img/rechauffement_climatique.jpg" style="padding: 5px;">
+                <span class="product-info">
+                <span class="card-subtitle">
+                    <span>Développment Durable</span>
+                </span>
+            </span>
+
+            </button>
+                </div>
+            <div class="col-md-4">
+            <button class="btn" id="image5" onclick="window.location.href = '#'"><img src="assets/img/voiture electrique.jpeg" style="padding: 5px;">
+                <span class="product-info">
+                <span class="card-subtitle">
+                    <span>Passer à l'électrique</span>
+                </span>
+            </span>
+            </button>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <h1 id="temoignages" style="height: 41px; width: 930px; margin: 2px; padding: 0px;">Témoignages</h1>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
